@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source ~/scripts/vars.sh
+source vars.sh
 
 is_dry_run=$1 # bool
 date_time=$(/bin/date "+%m%d%Y%H%M%S")

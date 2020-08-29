@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source ~/scripts/vars.sh
+source vars.sh
 
 pending_approval=$(head -n 1 $working_path/IS_APPROVAL_PENDING)
 

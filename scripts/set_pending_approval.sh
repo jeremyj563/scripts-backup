@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source ~/scripts/vars.sh
+source vars.sh
 
 status=$1
 
