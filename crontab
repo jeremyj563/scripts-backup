@@ -1,0 +1,4 @@
+# start backup procedure as dry-run (--dry-run=true)
+# every thursday at 8:00am
+
+0 8 * * THU ~/backup/scripts/invoke_backup.sh "true" > /dev/null 2>&1
