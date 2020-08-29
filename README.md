@@ -1,4 +1,7 @@
 ```
+~$ mkdir backup && cd backup
+~/backup$ git clone https://github.com/jeremyj563/scripts-backup.git .
+
 # locale-gen
 
 # apt install -y python-pip
