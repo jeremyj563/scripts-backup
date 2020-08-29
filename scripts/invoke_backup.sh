@@ -7,7 +7,7 @@ is_dry_run=$1 # bool
 # start backup procedure (--dry-run=true/false)
 log_file="$(eval ${working_path}/backup.sh ${is_dry_run})"
 
-# set the pending approval variable to true
+# set the pending approval variable
 eval "${working_path}/set_pending_approval.sh ${is_dry_run}"
 
 if ($is_dry_run); then

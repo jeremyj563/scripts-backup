@@ -26,8 +26,7 @@ class Approved(Resource):
   def get(self, approved):
 
     if approved == "true":
-      is_pending_approval = get_pending_approval()
-      if is_pending_approval == "true":
+      if get_pending_approval() == "true":
         set_pending_approval("false")
         invoke_backup()
         result = {"approved": "true"}
