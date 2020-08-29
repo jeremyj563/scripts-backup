@@ -23,8 +23,8 @@ fi
 command="$command /mnt/storage/* /mnt/usb-bak"
 
 # run the rsync command targeting both backup drives
-eval "${command}1/" 2> /dev/null
-eval "${command}2/" 2> /dev/null
+eval "${command}1/" > /dev/null 2>&1
+eval "${command}2/" > /dev/null 2>&1
 
 # return the path of the backup list file to stdout
 echo $log_file
