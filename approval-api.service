@@ -1,0 +1,12 @@
+[Unit]
+Description=backup approval api (flask)
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=user
+ExecStart=/usr/bin/python /home/user/backup/scripts/approval-api.py
+TimeoutSec=600
+Restart=on-failure
+RuntimeDirectoryMode=755
